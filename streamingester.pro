@@ -17,10 +17,10 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp \
-    rpc.cpp \
-    ingest.cpp
+SOURCES += src/main.cpp \
+    src/rpc.cpp \
+    src/ingest.cpp
 
 HEADERS += \
-    rpc.h \
-    ingest.h
+    src/rpc.h \
+    src/ingest.h

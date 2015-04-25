@@ -1,5 +1,5 @@
-#include <rpc.h>
-#include <ingest.h>
+#include "rpc.h"
+#include "ingest.h"
 
 #include <QCoreApplication>
 #include <QDebug>
