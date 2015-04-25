@@ -47,7 +47,7 @@ bool Ingest::start()
     m_socket.setSocketOption(QAbstractSocket::MulticastTtlOption, 15);
     m_socket.setSocketOption(QAbstractSocket::MulticastLoopbackOption, 1);
     m_socket.setSocketOption(QAbstractSocket::TypeOfServiceOption, 160);
-    m_socket.setSocketOption(QAbstractSocket::ReceiveBufferSizeSocketOption, 1048576 /* 1024 * 1024 */);
+    m_socket.setSocketOption(QAbstractSocket::ReceiveBufferSizeSocketOption, 12582912); // capped by net.core.rmem_max
 
     QDataStream stream(&m_file);
     connect(&m_socket, &QUdpSocket::readyRead, [this, &stream]
