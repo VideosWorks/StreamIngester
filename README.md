@@ -3,7 +3,7 @@ multicast stream recorder written in qt
 it is normally used to capture multicast transport streams (mpeg ts) to files
 
 ## building
-    git@github.com:pkoretic/StreamIngester.git
+    git clone https://github.com/pkoretic/StreamIngester.git
     cd StreamIngester
     qmake .
     make -j4
